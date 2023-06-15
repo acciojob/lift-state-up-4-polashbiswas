@@ -11,7 +11,7 @@ const Parent = () => {
     function handelForm(e){
         e.preventDefault();
 
-        setShowData([...showData,`${cartItems} - $${cartPrice}`]);
+        setShowData([...showData,`${cartItems}-$${cartPrice}`]);
        setCartItems("");
        setCartPrice("");
     }

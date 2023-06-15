@@ -15,6 +15,7 @@ const Child = ({ showlist, setlist }) => {
             <h2>Child Component</h2>
             <ul>
                 {
+                    showlist &&
                     showlist.map((data, index) => (
                         <li key={index}>{data}
                         <button onClick={()=>handelRemove(index)}>Remove</button>
